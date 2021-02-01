@@ -1,19 +1,19 @@
-body{background-color:black;border: 2px solid red;height:100vh}
-#HD{
-background-image:url('https://static.thenounproject.com/png/55901-200.png');
+body{height:100vh}
+#ConvertH2D{
+  background-image:url('https://static.thenounproject.com/png/55901-200.png');
 background-size:cover;
 margin:18px;
 width: 60px; 
 height: 60px;
 border:none;
 }
-#DH{
-background-image:url('https://static.thenounproject.com/png/55903-200.png');
+#ConvertD2H{
+  background-image:url('https://static.thenounproject.com/png/55903-200.png');
 background-size:cover;
 margin:18px;
 width: 60px; 
 height: 60px;
 border: none;
 }
-#CH{margin:5%;width:40%;}
-#CD{margin:5%;width:40%;}
+#CopyHex{margin:5%;width:40%;}
+#CopyDec{margin:5%;width:40%;}
