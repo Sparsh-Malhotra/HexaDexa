@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <title>HEXER DEXER</title>
-    <link rel="stylesheet" href="hex.css">
-    <script src="hex.js"></script>
     <meta name="viewport" content="width=device-width">
     </head>
   <body>
@@ -11,13 +9,27 @@
     <button id="CopyHex">Copy HEXADECIMAL CODE</button><br><br>
     <input id="HexInput" placeholder="Enter HEXCODE"><br>
     <p id="HexShow">show</p>
-    
+    <div>
     <button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
     <button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
-    
-    <p id="DecShow">show</p>
+    </div>
+    <p id="DecShow"></p>
     <input id="DecInput" placeholder="Enter Decimal"><br><br>
     <button id="CopyDec">Copy DECIMAL CODE</button>
   </div>
+  <script>
+  function H2D()
+  {
+    var x = document.getElementById("HexInput").value;
+    var y = parseInt(x,16);
+  document.getElementById("DecShow").innerHTML = y;
+  }
+  function D2H()
+  {
+    var a = document.getElementById("DecInput").value;
+    var b = Number(a).toString(16);
+    document.getElementById("HexShow").innerHTML = b;
+  }
+  </script>
 </body>
 </html>
