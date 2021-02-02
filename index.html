@@ -3,19 +3,18 @@
   <head>
     <title>HEXER DEXER</title>
     <meta name="viewport" content="width=device-width">
+    <style>button,input,p{text-align:center;}</style>
     </head>
   <body>
   <div align="center">
-    <button id="CopyHex">Copy HEXADECIMAL CODE</button><br><br>
+    <button id="CopyHex" onclick="CopyH()">Copy HEXADECIMAL CODE</button><br><br>
     <input id="HexInput" placeholder="Enter HEXCODE"><br>
-    <p id="HexShow">show</p>
-    <div>
+    <p id="HexShow">0</p>
     <button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
     <button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
-    </div>
-    <p id="DecShow"></p>
+    <p id="DecShow">0</p>
     <input id="DecInput" placeholder="Enter Decimal"><br><br>
-    <button id="CopyDec">Copy DECIMAL CODE</button>
+    <button id="CopyDec" onclick="CopyD()">Copy DECIMAL CODE</button>
   </div>
   <script>
   function H2D()
@@ -30,6 +29,20 @@
     var b = Number(a).toString(16);
     document.getElementById("HexShow").innerHTML = b;
   }
+function CopyH() {
+  var copyText = document.getElementById("HexShow");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+function CopyD() {
+  var copyText = document.getElementById("DecShow");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
   </script>
 </body>
 </html>
