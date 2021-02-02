@@ -4,24 +4,35 @@
     <title>Hexadecimal to Decimal Interconverter</title>
     <meta name="viewport" content="width=device-width">
     <style>
-    button,input,p{text-align:center;}
-    div{display: flex;
-  flex-direction: column;
+    button,input,p{margin:5%;text-align:center;}
+    body{
+      height: 100vh;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
     }
-   body{height:1vh;border: 1px solid black;}
+   #buttons{display:flex;}
+   #bod{si
+     padding:25%;
+     border: 1px solid black;
+     margin:auto;
+     display:flex;
+     flex-direction: column;
+   } 
     </style>
     </head>
-  <body>
-  <div align="center">
-    <button id="CopyHex" onclick="CopyH()">Copy HEXADECIMAL CODE</button><br><br>
-    <input id="HexInput" placeholder="Enter HEXCODE"><br>
+  <body><div id="bod" >
+    <button id="CopyHex" onclick="CopyH()">Copy HEXADECIMAL CODE</button>
+    <input id="HexInput" placeholder="Enter HEXCODE">
     <p id="HexShow">0</p>
+    <div id="buttons" align="center">
     <button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
     <button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
+    </div>
     <p id="DecShow">0</p>
-    <input id="DecInput" placeholder="Enter Decimal"><br><br>
+    <input id="DecInput" placeholder="Enter Decimal">
     <button id="CopyDec" onclick="CopyD()">Copy DECIMAL CODE</button>
-  </div>
+</div>
   <script>
   var y;
   var b;
