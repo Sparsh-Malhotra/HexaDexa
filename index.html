@@ -17,34 +17,32 @@
     <button id="CopyDec" onclick="CopyD()">Copy DECIMAL CODE</button>
   </div>
   <script>
-  function H2D()
-  {
+  var y;
+  var b;
+  function H2D(){
     var x = document.getElementById("HexInput").value;
     var y = parseInt(x,16);
   document.getElementById("DecShow").innerHTML = y;
   }
-  function D2H()
-  {
+  function D2H(){
     var a = document.getElementById("DecInput").value;
     var b = Number(a).toString(16);
     document.getElementById("HexShow").innerHTML = b;
   }
-function CopyH()
-{
-  var copyHext = document.getElementById("HexShow");
-  copyHext.select();
-  copyHext.setSelectionRange(0, 99999)
+  function CopyH(){
+    var a = document.getElementById("DecInput").value;
+    var c = Number(a).toString(16);
+    c.select();
+    c.setSelectionRange(0, 99999)
+    document.execCommand('copy')
+    alert("Copied the text: " + c.value);
+  }
+  function CopyD(){
+  y.select();
+  y.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  alert("Copied the text: " + copyHext.value);
-}
-function CopyD()
-{
-  var copyDext = document.getElementById("DecShow");
-  copyDext.select();
-  copyDext.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyDext.value);
-}
+  alert("Copied the text: " + y.value);
+  }
   </script>
 </body>
 </html>
