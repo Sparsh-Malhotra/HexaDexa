@@ -3,7 +3,10 @@
   <head>
     <title>Hexadecimal to Decimal Interconverter</title>
     <meta name="viewport" content="width=device-width">
-    <style>button,input,p{text-align:center;}</style>
+    <style>
+    button,input,p{text-align:center;}
+    div{width:100%}
+    </style>
     </head>
   <body>
   <div align="center">
@@ -30,11 +33,11 @@
     document.getElementById("HexShow").innerHTML = b;
   }
   function CopyH(){
-    var a = document.getElementById("DecInput").value;
+    var a = document.getElementById("DecInput");
     var c = Number(a).toString(16);
     c.select();
     c.setSelectionRange(0, 99999)
-    document.execCommand('copy')
+    document.execCommand("copy");
     alert("Copied the text: " + c.value);
   }
   function CopyD(){
