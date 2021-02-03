@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hexadecimal to Decimal Interconverter</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="UI.css"/>
-    </head>
-  <body><div id="bod" >
-    <button id="CopyHex" onclick="CopyH()">Copy HEXADECIMAL CODE</button>
-    <input id="HexInput" placeholder="Enter HEXCODE">
-    <p id="HexShow">0</p>
-    <div id="buttons" align="center">
-    <button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
-    <button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
-    </div>
-    <p id="DecShow">0</p>
-    <input id="DecInput" placeholder="Enter Decimal">
-    <button id="CopyDec" onclick="CopyD()">Copy DECIMAL CODE</button>
-</div>
-  <script src="Function.js"></script>
+	<head>
+		<title>Hexadecimal to Decimal Interconverter</title>
+		<meta name="viewport" content="width=device-width">
+		<meta name="theme-color" content="black" />
+		<link rel="stylesheet" href="UI.css"/>
+		</head>
+		<body>
+			<div id="bod" >
+				<div >
+				<p id="HexShow">000</p>
+				<button id="CopyHex" onclick="CopyH()"></button>
+				</div>
+				<input id="HexInput" placeholder="Enter HEXCODE">
+				<div id="buttons" align="center">
+					<button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
+					<button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
+					</div>
+				<input id="DecInput" placeholder="Enter Decimal">
+				<div>
+				<p id="DecShow">000</p>
+				<button id="CopyDec" onclick="CopyD()"></button>
+				</div>
+			</div>
+	<script src="Function.js"></script>
 </body>
 </html>
