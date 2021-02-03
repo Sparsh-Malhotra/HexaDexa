@@ -3,23 +3,7 @@
   <head>
     <title>Hexadecimal to Decimal Interconverter</title>
     <meta name="viewport" content="width=device-width">
-    <style>
-    button,input,p{margin:5%;text-align:center;}
-    body{
-      height: 100vh;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-    }
-   #buttons{display:flex;}
-   #bod{si
-     padding:25%;
-     border: 1px solid black;
-     margin:auto;
-     display:flex;
-     flex-direction: column;
-   } 
-    </style>
+    <link rel="stylesheet" href="UI.css"/>
     </head>
   <body><div id="bod" >
     <button id="CopyHex" onclick="CopyH()">Copy HEXADECIMAL CODE</button>
@@ -33,33 +17,6 @@
     <input id="DecInput" placeholder="Enter Decimal">
     <button id="CopyDec" onclick="CopyD()">Copy DECIMAL CODE</button>
 </div>
-  <script>
-  var y;
-  var b;
-  function H2D(){
-    var x = document.getElementById("HexInput").value;
-    var y = parseInt(x,16);
-  document.getElementById("DecShow").innerHTML = y;
-  }
-  function D2H(){
-    var a = document.getElementById("DecInput").value;
-    var b = Number(a).toString(16);
-    document.getElementById("HexShow").innerHTML = b;
-  }
-  function CopyH(){
-    var a = document.getElementById("DecInput");
-    var c = Number(a).toString(16);
-    c.select();
-    c.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Copied the text: " + c.value);
-  }
-  function CopyD(){
-  y.select();
-  y.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + y.value);
-  }
-  </script>
+  <script src="Function.js"></script>
 </body>
 </html>
