@@ -13,9 +13,9 @@ body{
 	padding:10%;
 	background-color: steelblue;
 	box-shadow: 0px 0px 30px steelblue;
-}
-	
-p{text-align: center;
+}	
+p{
+        text-align: center;
 	font-size: 400%;
 	color:white;
 	font-family: 'Exo', sans-serif;
