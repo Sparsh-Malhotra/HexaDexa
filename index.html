@@ -5,23 +5,17 @@
 		<meta name="viewport" content="width=device-width">
 		<meta name="theme-color" content="black" />
 		<link rel="stylesheet" href="UI.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap" rel="stylesheet">
 		</head>
 		<body>
-			<div id="bod" >
-				<div >
-				<p id="HexShow">000</p>
-				<button id="CopyHex" onclick="CopyH()"></button>
-				</div>
-				<input id="HexInput" placeholder="Enter HEXCODE">
-				<div id="buttons" align="center">
-					<button id="ConvertH2D" onclick="H2D()">Hexcode to Decimal</button>
-					<button id="ConvertD2H" onclick="D2H()">Decimal to Hexcode</button>
+			<div id="body" >
+				<div align="center">
+				<input id="Input" placeholder="Enter HEXCODE/Decimal">
+					<button id="ConvertH2D" onclick="H2D()">DECIMAL</button>
+					<button id="ConvertD2H" onclick="D2H()">HEXADECIMAL</button>
 					</div>
-				<input id="DecInput" placeholder="Enter Decimal">
-				<div>
-				<p id="DecShow">000</p>
-				<button id="CopyDec" onclick="CopyD()"></button>
-				</div>
+					<p id="Show">000</p>
 			</div>
 	<script src="Function.js"></script>
 </body>
