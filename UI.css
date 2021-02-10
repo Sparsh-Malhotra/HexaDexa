@@ -1,27 +1,17 @@
 body{
+  background-image: url("https://wallpapercave.com/wp/wp5290468.jpg");
+  background-size: auto 25%;
 	background-color:black;
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	height:97vh;
+	height:94vh;
 	padding:12px;
 }
-#Loader{
-	border:6px solid black;
-	border-radius:50%;
-	border-top:6px solid white;
-	width:40px;
-	height:40px;
-	animation:spin 1s linear infinite;}
-@keyframes spin{
-	0%{transform:rotate(0deg)}
-	100%{transform:rotate(360deg)}
-}
-	
 #body{
 	display:flex;
 	align-items: center;
-	border-radius: 4%;
+	border-radius: 5%;
 	padding:10%;
 	background-color: steelblue;
 	box-shadow: 0px 0px 30px steelblue;
