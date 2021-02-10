@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	  <style type="text/css" media="all">
-	    #Loader{
-	border:6px solid black;
-	border-radius:50%;
-	border-top:6px solid white;
-	width:40px;
-	height:40px;
-	animation:spin 1s linear infinite;}
-@keyframes spin{
-	0%{transform:rotate(0deg)}
-	100%{transform:rotate(360deg)}
-}
-	
-	  </style>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="Preloader.js" type="text/javascript" charset="utf-8"></script>
+	  <link rel="stylesheet" href="Preloader.css"/>
 		<title>Hexadecimal to Decimal Interconverter</title>
 		<meta name="viewport" content="width=device-width">
 		<meta name="theme-color" content="black" />
@@ -36,24 +25,7 @@
 					</div>
 					<p id="Show">000</p>
 			</div>
-			<script>
-			document.onreadystatechange = function() {
-
-  if (document.readyState !== "complete") {
-
-    document.querySelector("body").style.visibility = "hidden";
-
-    document.querySelector("#loader").style.visibility = "visible";
-
-  } else {
-
-    document.querySelector("#loader").style.display = "none";
-
-    document.querySelector("body").style.visibility = "visible";
-
-  }
-}</script>
-	<script src="Function.js"></script>
-	<script src="register-sw.js" type="text/javascript" charset="utf-8"></script>
+			<script src="Function.js"></script>
+			<script src="register-sw.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
