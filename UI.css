@@ -1,14 +1,16 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 body{
-	background-color:black;
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	height:95vh;
 	flex-direction: column;
 }
 p,input,button{
 	font-family: 'Exo', sans-serif;
-	color:white;
 	font-size: 4vh;
 	margin: 3vh;
 	border:none;
