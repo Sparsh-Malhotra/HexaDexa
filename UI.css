@@ -3,42 +3,27 @@ body{
 	display:flex;
 	align-items: center;
 	justify-content: center;
-	height:94vh;
-	padding:12px;
+	height:95vh;
+	flex-direction: column;
 }
-#body{
-	display:flex;
-	align-items: center;
-	border-radius: 5%;
-	padding:10%;
-	box-shadow: 0px 0px 15px steelblue;
-}	
-p{text-align: center;
-	font-size: 400%;
-	color:white;
+p,input,button{
 	font-family: 'Exo', sans-serif;
-	box-shadow: 0px 5px deepskyblue;
+	color:white;
+	font-size: 4vh;
+	margin: 3vh;
+	border:none;
 }
 input{
-	color:white;
-	background: none;
-	border:none;
-	margin: 10%;
-	padding:5%;
-	font-family: 'Exo', sans-serif;
-	box-shadow: 0px 5px deepskyblue;
-}
-::placeholder{
-	color:white;
-	opacity:50%;
+  background: none;
+  outline:none;
+  box-shadow: 0 0.5vh deepskyblue;
 }
 button{
-	border:none;
-	color:white;
+  color: black;
 	background-color: deepskyblue;
-	margin:5%;
-	padding:5%;
-	border-radius: 40px;
-	font-family: 'Exo', sans-serif;
-	box-shadow: 0px 0px 10px deepskyblue;
+	border-radius: 3vh;
+}
+@media screen and (orientation : landscape){
+  body{flex-direction:row;}
+  p,input,button{font-size: 3vw;}
 }

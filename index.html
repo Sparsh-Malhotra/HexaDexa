@@ -9,19 +9,21 @@
 		<link rel="icon" type="image/png" sizes="192x192" href="192px_icon.png"/>
 		<link rel="manifest" href="manifest.json"/>
 		<link rel="stylesheet" href="UI.css"/>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap" rel="stylesheet">
 		</head>
 		<body>
-			<div id="body" >
-				<div align="center">
-				<input id="Input" placeholder="Enter HEXCODE/Decimal">
-					<button id="ConvertH2D" onclick="H2D()">DECIMAL</button>
-					<button id="ConvertD2H" onclick="D2H()">HEXADECIMAL</button>
-					</div>
-					<p id="Show">000</p>
-			</div>
-			<script src="Function.js"></script>
+		  <p>000</p>
+		  <input placeholder="Enter HEXCODE/Decimal">
+		  <button id="ConvertH2D" onclick="H2D()">DECIMAL</button>
+		  <button id="ConvertD2H" onclick="D2H()">HEXADECIMAL</button>
+		  <script>
+			function H2D(){
+			  document.querySelector('p').innerHTML = parseInt(document.querySelector('input').value,16);
+			}
+			function D2H(){
+			  document.querySelector('p').innerHTML = Number(document.querySelector('input').value).toString(16);
+			}
+			</script>
 			<script src="register-sw.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
