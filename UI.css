@@ -1,6 +1,4 @@
 body{
-  background-image: url("https://wallpapercave.com/wp/wp5290468.jpg");
-  background-size: auto 25%;
 	background-color:black;
 	display:flex;
 	align-items: center;
@@ -13,11 +11,9 @@ body{
 	align-items: center;
 	border-radius: 5%;
 	padding:10%;
-	background-color: steelblue;
-	box-shadow: 0px 0px 30px steelblue;
+	box-shadow: 0px 0px 15px steelblue;
 }	
-p{
-        text-align: center;
+p{text-align: center;
 	font-size: 400%;
 	color:white;
 	font-family: 'Exo', sans-serif;
