@@ -10,20 +10,13 @@
 		<link rel="manifest" href="manifest.json"/>
 		<link rel="stylesheet" href="UI.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,900&display=swap" rel="stylesheet">
-		</head>
-		<body>
-		  <p>000</p>
-		  <input placeholder="Enter HEXCODE/Decimal">
-		  <button id="ConvertH2D" onclick="H2D()">DECIMAL</button>
-		  <button id="ConvertD2H" onclick="D2H()">HEXADECIMAL</button>
-		  <script>
-			function H2D(){
-			  document.querySelector('p').innerHTML = parseInt(document.querySelector('input').value,16);
-			}
-			function D2H(){
-			  document.querySelector('p').innerHTML = Number(document.querySelector('input').value).toString(16);
-			}
-			</script>
-			<script src="register-sw.js" type="text/javascript" charset="utf-8"></script>
-</body>
+	</head>
+	<body>
+	  <p>000</p>
+		<input placeholder="Enter HEXCODE/Decimal">
+		<button id="ConvertH2D" onclick="H2D()">DECIMAL</button>
+		<button id="ConvertD2H" onclick="D2H()">HEXADECIMAL</button>
+		<script src="register-sw.js"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
