@@ -1,4 +1,4 @@
-var output = document.querySelector('p').innerHTML;
+var output = document.querySelector('p');
 
 var input = document.querySelector('input');
 
