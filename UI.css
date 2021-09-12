@@ -1,30 +1,83 @@
-html,body {
+html,
+body {
   height: 100%;
 }
-body{
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-p,input,button{
-	font-family: 'Exo', sans-serif;
-	font-size: 2rem;
-	margin: 1rem;
-	border:none;
+p,
+input,
+button {
+  font-family: "Exo", sans-serif;
+  font-size: 2rem;
+  margin: 1rem;
+  border: none;
 }
-input{
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
   text-align: right;
   background: none;
-  outline:none;
+  outline: none;
   box-shadow: 0 0.25rem deepskyblue;
 }
 
-button{
+button {
   color: black;
-	background-color: deepskyblue;
-	border-radius: 1rem;
+  background-color: deepskyblue;
+  border-radius: 1rem;
 }
-@media screen and (orientation : landscape){
-  
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  font-size: 1rem;
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#copy {
+  cursor: pointer;
+  background-color: white;
+}
+@media screen and (orientation: landscape) {
 }
