@@ -1,7 +1,5 @@
 html,body {
-  margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 body{
 	display:flex;
@@ -11,23 +9,22 @@ body{
 }
 p,input,button{
 	font-family: 'Exo', sans-serif;
-	font-size: 4vh;
-	margin: 3vh;
+	font-size: 2rem;
+	margin: 1rem;
 	border:none;
 }
 input{
   text-align: right;
   background: none;
   outline:none;
-  box-shadow: 0 0.5vh deepskyblue;
+  box-shadow: 0 0.25rem deepskyblue;
 }
 
 button{
   color: black;
 	background-color: deepskyblue;
-	border-radius: 3vh;
+	border-radius: 1rem;
 }
 @media screen and (orientation : landscape){
-  body{flex-direction:row;}
-  p,input,button{font-size: 3vw;}
+  
 }

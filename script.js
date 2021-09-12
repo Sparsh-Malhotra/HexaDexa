@@ -1,6 +1,10 @@
+var output = document.querySelector('p').innerHTML;
+
+var input = document.querySelector('input');
+
 function H2D(){
-			  document.querySelector('p').innerHTML = parseInt(document.querySelector('input').value,16);
+  output.innerHTML = parseInt(input.value,16);
 }
 function D2H(){
-			  document.querySelector('p').innerHTML = Number(document.querySelector('input').value).toString(16);
+  output.innerHTML = Number(input.value).toString(16);
 }
